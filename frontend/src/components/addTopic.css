@@ -1,0 +1,31 @@
+.categories {
+    display: none;
+    position: relative;
+}
+
+.blockClass:hover {
+    border: 2px solid whitesmoke;
+    position: relative;
+}
+
+.blockClass:hover .categories {
+    display: block;
+}
+
+.hover-popup {
+    /* display: none; */
+    background-color: green; 
+    visibility:hidden;
+    position: absolute;
+    height: 100px;
+    width: 400px;
+    border: 2px solid red;
+    z-index: 10;
+    /* left: 0;
+    bottom: 50px; */
+}
+
+.blockClass:hover + .hover-popup {
+    /* display: block; */
+    visibility: visible;
+}
